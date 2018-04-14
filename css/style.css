@@ -1,0 +1,208 @@
+  /*------------------------------------*\
+    #GENERAL
+  \*------------------------------------*/
+
+:root {
+  --main-color: #008000;
+  --secondary-color: #233b47;
+  --optional-color-01: #e0ebe7;
+  --optional-color-02: red;
+  --secondary-text-color: #626262;
+  --content-border: 10px solid var(--secondary-color);
+}
+
+@font-face {
+    font-family: 'gbb'; /*a name to be used later*/
+    src: url('../gbb.ttf'); /*URL to font*/
+}
+
+  body {
+  background-color: #f6f6f6;
+	margin: 0;
+	font-size: 20px !important;
+	line-height: 150%;
+	font-family: gbb;
+}
+
+.big-font {
+  font-size: 2.5em;
+}
+
+.cursor-margin {
+  margin-right: 15px;
+}
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+main {
+}
+
+header {
+  height: calc(75vh);
+  padding: 25px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../img/header-bg-cropped.gif');
+  background-size: cover;
+  border-bottom: 10px solid var(--secondary-color);
+}
+
+#header-menu {
+  height: calc(8vh);
+  text-align: center;
+}
+
+#header-image {
+    margin-top: 150px;
+    width: 800px;
+}
+
+#header-title {
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: 30px;
+  font-size: 8em;
+  margin-top: 250px;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.pre-content-shape {
+  color: white;
+  background-color: var(--secondary-color);
+  height: 70px;
+  width: 38%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%);
+}
+
+/*------------------------------------*\
+  #ACCORDION
+\*------------------------------------*/
+.accordion-title-shape {
+  color: white;
+  margin-left: 45px;
+  margin-top: 100px;
+  background-color: var(--secondary-color);
+  height: 70px;
+  width: 30%;
+  -webkit-clip-path: polygon(0 0, 81% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 81% 0, 100% 100%, 0% 100%);
+}
+
+
+
+.info-box {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: var(--content-border);
+  border-top: var(--content-border);
+  /* border-bottom: 5px solid #d0d0d0; */
+  /* border-right: 5px solid #d0d0d0; */
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  margin-bottom: 100px;
+
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.accordion {
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    padding: 38px;
+    padding-left: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: var(--secondary-color)
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: var(--secondary-color);
+    color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: .9em;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.accordion-text {
+  padding: 10px;
+  padding-top: 0;
+  text-align: justify;
+}
+
+.outer-info-box {
+  border: .1px solid black;
+  /* border-radius: 15px; */
+  /* width: 95%; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* box-shadow: 0 5px 8px 0 hsla(0, 0%, 0%, 0.6); */
+}
+
+.pre-outer-title {
+  text-align: center;
+  font-size: 5em;
+}
+
+#outer1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url('../img/outer-bg-1.jpg');
+  background-size: contain;
+}
+
+#outer2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url('../img/outer-bg-2.jpg');
+  background-size: contain;
+}
+
+#outer3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url('../img/outer-bg-3.jpg');
+  background-size: contain;
+}
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+ footer {
+   background-color: var(--secondary-color);
+   border-top: 10px solid var(--main-color);
+   height: calc(30vh);
+   text-align: center;
+   color: #cccccc;
+
+   font-size: 1.7rem;
+ }
+
+ .footer-icons {
+   width: 80px;
+   margin-right: 10px;
+ }
