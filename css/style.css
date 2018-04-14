@@ -124,6 +124,7 @@ button {
     width: 100%;
     text-align: left;
     border: none;
+    border-bottom: .1px solid var(--secondary-color);
     outline: none;
     transition: 0.4s;
 }
@@ -155,6 +156,7 @@ button {
 }
 
 .accordion-text {
+  font-size: 1em;
   padding: 10px;
   padding-top: 0;
   text-align: justify;
@@ -195,7 +197,7 @@ button {
  footer {
    background-color: var(--secondary-color);
    border-top: 10px solid var(--main-color);
-   height: calc(30vh);
+   height: 550px;
    text-align: center;
    color: #cccccc;
 
