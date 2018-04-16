@@ -18,6 +18,7 @@
 
   body {
   background-color: #f6f6f6;
+  background-image: url('../img/background.gif');
 	margin: 0;
 	font-size: 20px !important;
 	line-height: 150%;
@@ -37,16 +38,15 @@
 \*------------------------------------*/
 
 main {
+
 }
 
 header {
-  height: calc(75vh);
+  height: calc(55vh);
   padding: 25px;
   text-align: center;
   color: white;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../img/header-bg-cropped.gif');
   background-size: cover;
-  border-bottom: 10px solid var(--secondary-color);
 }
 
 #header-menu {
@@ -131,7 +131,7 @@ button {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-    background-color: var(--secondary-color)
+    background-color: #009b00;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -144,7 +144,7 @@ button {
 }
 
 .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    /* content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: .9em;
     color: white;
     float: right;
@@ -152,11 +152,12 @@ button {
 }
 
 .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    /* content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 .accordion-text {
-  font-size: 1em;
+  font-size: 15px;
+  text-size-adjust: 300%;
   padding: 10px;
   padding-top: 0;
   text-align: justify;
@@ -176,20 +177,10 @@ button {
   font-size: 5em;
 }
 
-#outer1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url('../img/outer-bg-1.jpg');
-  background-size: contain;
-}
 
-#outer2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url('../img/outer-bg-2.jpg');
-  background-size: contain;
-}
 
-#outer3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url('../img/outer-bg-3.jpg');
-  background-size: contain;
-}
+
+
 /*------------------------------------*\
   #FOOTER
 \*------------------------------------*/
@@ -197,7 +188,7 @@ button {
  footer {
    background-color: var(--secondary-color);
    border-top: 10px solid var(--main-color);
-   height: 550px;
+   height: 300px;
    text-align: center;
    color: #cccccc;
 

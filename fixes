@@ -1,10 +1,10 @@
-- change logo to the new one.
-- get rid of the white spaces in between accordion's
-- hand icon should be on hover and expand
-- hover color should be lighter green
-- only one accordion open at time
-- stars background on accordion's
-- change .info-box width to 80 per cent. DONE
-- change header image to text
-- no extra spaces on footer
-- change header background to stars
+DONE - get rid of the white spaces in between accordion's
+DONE - hand icon should be on hover and expand
+DONE - hover color should be lighter green
+DONE - only one accordion open at time
+DONE - stars background on accordion's
+DONE - change .info-box width to 80 per cent.
+DONE - change header image to text
+DONE - no extra spaces on footer
+DONE - change header background to stars
+DONE - fix text size bug
