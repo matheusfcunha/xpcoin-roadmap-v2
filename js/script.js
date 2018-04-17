@@ -6,8 +6,11 @@ var j;
 
 for (j = 0; j < ACCORDION_BTN_TITLE.length; j++) {
   ACCORDION_BTN_TITLE[j].addEventListener("mouseover", function() {
-    POINTER.style.display = "inline-block";
-    this.insertBefore(POINTER, this.firstChild);
+    console.log(this);
+    if (this.firstChild !== POINTER) {
+      this.prepend(POINTER);
+      POINTER.style.display = "inline";
+    }
   })
 }
 
