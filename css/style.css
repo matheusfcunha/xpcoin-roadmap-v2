@@ -33,6 +33,30 @@
   margin-right: 15px;
 }
 
+@media (min-width:1025px) and (min-width:1281px)  {
+  body {
+  zoom: 50%;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  header {
+    margin-bottom: 400px;
+  }
+
+  .accordion-text {
+    font-size: 2em !important;
+    padding: 15px !important;
+    line-height: 120% !important;
+  }
+
+  .accordion-title-shape{
+    margin-left: 137px !important;
+  }
+
+}
+
 /*------------------------------------*\
   #HEADER
 \*------------------------------------*/
